@@ -1,6 +1,5 @@
 # ============================================================
-# requirements.txt — football_defence_analysis
-# Install with: pip install -r requirements.txt
+# requirements.txt — updated for Python 3.13 Windows
 # ============================================================
 
 # --- API & HTTP ---
@@ -8,25 +7,25 @@ requests==2.31.0
 python-dotenv==1.0.0
 
 # --- Data Handling ---
-pandas==2.2.0
-numpy==1.26.4
+pandas>=2.2.0
+numpy>=2.0.0
 
 # --- Statistical Analysis ---
-scipy==1.12.0
-statsmodels==0.14.1
+scipy>=1.13.0
+statsmodels>=0.14.1
 
 # --- Machine Learning ---
-scikit-learn==1.4.0
+scikit-learn>=1.4.0
 
 # --- Visualization ---
-matplotlib==3.8.2
-seaborn==0.13.2
-plotly==5.18.0
+matplotlib>=3.8.2
+seaborn>=0.13.2
+plotly>=5.18.0
 
 # --- Notebooks ---
-jupyterlab==4.1.0
-ipykernel==6.29.0
+jupyterlab>=4.1.0
+ipykernel>=6.29.0
 
 # --- Utilities ---
-tqdm==4.66.1
-colorlog==6.8.2
+tqdm>=4.66.1
+colorlog>=6.8.2
