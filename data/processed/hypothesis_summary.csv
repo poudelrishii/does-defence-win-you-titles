@@ -1,0 +1,11 @@
+league_key,league_name,season,season_label,champion_name,champion_points,champion_ga,champion_def_rank,had_best_defence,top4_avg_def_rank
+BUNDESLIGA,Bundesliga,2022,2022/23,Bayern Munich,71,38,1,1,2.25
+BUNDESLIGA,Bundesliga,2023,2023/24,Bayer Leverkusen,90,24,1,1,2.5
+EPL,Premier League,2022,2022/23,Manchester City,89,33,1,1,2.0
+EPL,Premier League,2023,2023/24,Manchester City,91,34,2,0,3.25
+LALIGA,La Liga,2022,2022/23,Barcelona,88,20,1,1,2.5
+LALIGA,La Liga,2023,2023/24,Real Madrid,95,26,1,1,4.75
+LIGUE_1,Ligue 1,2022,2022/23,Paris Saint Germain,85,40,4,0,3.0
+LIGUE_1,Ligue 1,2023,2023/24,Paris Saint Germain,76,33,2,0,3.75
+SERIE_A,Serie A,2022,2022/23,Napoli,90,28,1,1,4.0
+SERIE_A,Serie A,2023,2023/24,Inter,94,22,1,1,5.0

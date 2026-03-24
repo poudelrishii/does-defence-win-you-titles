@@ -97,44 +97,46 @@ Tests run:
 *(Fill these in after running python main.py --step all)*
 
 ### Finding 1: How often did the best defence win the title?
-- % of seasons where rank-1 defence won title: [INSERT]
-- % of seasons where top-3 defence won title: [INSERT]
+- 70% of seasons — the champion had the #1 ranked defence in their league
+- 90% of seasons — the champion had a top-3 defence
 
-### Finding 2: Spearman correlation per league
-- EPL:        rho=[INSERT], p=[INSERT]
-- La Liga:    rho=[INSERT], p=[INSERT]
-- Bundesliga: rho=[INSERT], p=[INSERT]
-- Serie A:    rho=[INSERT], p=[INSERT]
-- Ligue 1:    rho=[INSERT], p=[INSERT]
+### Finding 2.1 Per league breakdown
 
-### Finding 3: Logistic regression accuracy
-- CV accuracy: [INSERT]%
-- Baseline:    [INSERT]%
+League         Best defence won                     Avg champion def rank
+Bundesliga     100% — every single season           1.0
+La Liga 🇪🇸     100% — every single season           1.0
+Serie A 🇮🇹     100% — every single season           1.0
+Premier League  50%                                1.5
+Ligue 1 🇫🇷       0% — never the best defence        3.0
+
+Ligue 1 is the outlier — PSG wins titles with goals not defence.
+
+### Finding 2.2  Spearman Correlation
+All 5 leagues are highly significant (p=0.0000):
+
+Bundesliga: ρ=0.890 — strongest relationship
+Serie A: ρ=0.872
+Ligue 1: ρ=0.838 — even here, defence still correlates with position
+La Liga: ρ=0.821
+EPL: ρ=0.815
+
+Every single league shows a strong, statistically significant relationship between defensive rank and final position.
+
+### Finding 3: Pearson Correlation
+
+r = -0.790 — strong negative correlation
+p = 1.15e-42 — essentially impossible this is by chance
+
+Teams that concede fewer goals earn significantly more points across all leagues.
 
 ---
 
 ## 6. CONCLUSIONS
 
 ### Does the best defensive team win the title?
-Partially yes — but more nuanced than the cliche suggests:
-
-1. Defence is necessary but rarely sufficient alone. Teams with
-   top-3 defences win titles far more often than chance predicts,
-   but the rank-1 defensive team does not always win.
-
-2. League culture matters. The Bundesliga often crowns champions
-   who are both defensive and prolific. Ligue 1 shows stronger
-   defensive dominance from its champions.
-
-3. The floor matters more than the ceiling. No team with a
-   bottom-half defence has won a title across these 5 seasons.
-   Elite attack can mask average defence mid-table but not over
-   a full 38-game season at the top.
-
-4. Goals conceded correlates more strongly with points than
-   goals scored. This is the most consistent finding across
-   all 5 leagues.
-
+Yes but not in every league.
+3 out of 5 leagues it was perfect. The hypothesis is strongly supported by the data.
+Premier leauge and League 1 are exceptions
 ---
 
 ## 7. LIMITATIONS
